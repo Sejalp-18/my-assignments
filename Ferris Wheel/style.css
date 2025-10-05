@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,rgb(0, 0, 147), #8922f8,rgb(253, 67, 98),rgba(255, 166, 0));
+}
+
+.load{
+    width: 100%;
+    position: relative;
+}
+
+.wheel{
+  height: 0rem;
+  width: 0rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform-origin: center;
+  animation: main-spin 24s linear infinite;
+
+}
+
+@keyframes main-spin{
+  0%{
+    transform: rotateZ(0deg)  ;
+  }
+  100%{
+    transform: rotateZ(360deg)  ;
+  }
+    
+}
+
+.circle-1{
+    height: 4rem;
+    width: 4rem;
+    background-color: black;
+    border-radius: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.circle-2{
+    height: 10rem;
+    width: 10rem;
+    border: 2px black solid;
+    border-radius: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.circle-3{
+    height: 18rem;
+    width: 18rem;
+    border: 2px black solid;
+    border-radius: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.circle-4{
+    height: 38rem;
+    width: 38rem;
+    border: 2px black solid;
+    border-radius: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main-circle{
+    height: 40rem;
+    width: 40rem;
+    border: 5px black solid;
+    border-radius: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.line-1{
+    height: 40rem;
+    width: 2px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.line-2{
+    height: 40rem;
+    width: 2px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(30deg);
+}
+
+.line-3{
+    height: 40rem;
+    width: 2px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(60deg);
+}
+
+.line-4{
+    height: 40rem;
+    width: 2px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.line-5{
+    height: 40rem;
+    width: 2px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(120deg);
+}
+
+.line-6{
+    height: 40rem;
+    width: 2px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(150deg);
+}
+
+
+
+
+
+
+.l1{
+    height: 40rem;
+    width: 10px;
+    background-color: black;
+    position: fixed;
+    top: 48%;
+    left: 38%;
+    transform: rotate(30deg); 
+}
+
+.l2{
+    height: 40rem;
+    width: 10px;
+    background-color: black;
+    position: fixed;
+    top: 48%;
+    right: 38%;
+    transform: rotate(-30deg); 
+}
+
+.l3{
+    height: 100rem;
+    width: 100rem;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    top: 804px;
+    left: -50px;
+
+}
+
+
+@keyframes bucket_rotate {
+  0% { 
+    transform: rotate(0) translateX(20rem) rotate(0); 
+  }
+  100% { 
+    transform: rotate(360deg) translateX(20rem) rotate(-360deg); 
+  }
+}
+
+.bucket{
+ position: fixed;
+ height: 3rem;
+ width: 4rem;
+ border-radius: 0 0 2px 2px;
+}
+
+.bucket div{
+  position: absolute;
+  height: 3rem;
+  width: 4rem;
+  left: -2rem;
+  animation: bucket_rotate 24s linear infinite;
+}
+
+.bucket div span{
+  display: block;
+  height: 3rem;
+  width: 4rem;
+  border: 20px solid black;
+  border-radius: 10px 10px 20px 20px;
+  position: fixed;
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+
+}
+
+.bucket div:nth-child(1){
+   animation-delay: 0s;
+}
+.bucket div:nth-child(2){
+   animation-delay: -2s;
+}
+.bucket div:nth-child(3){
+   animation-delay: -4s;
+}
+.bucket div:nth-child(4){
+   animation-delay: -6s;
+}
+.bucket div:nth-child(5){
+   animation-delay: -8s;
+}
+.bucket div:nth-child(6){
+   animation-delay: -10s;
+}
+.bucket div:nth-child(7){
+   animation-delay: -12s;
+}
+.bucket div:nth-child(8){
+   animation-delay: -14s;
+}
+.bucket div:nth-child(9){
+   animation-delay: -16s;
+}
+.bucket div:nth-child(10){
+   animation-delay: -18s;
+}
+.bucket div:nth-child(11){
+   animation-delay: -20s;
+}
+.bucket div:nth-child(12){
+   animation-delay: -22s;
+}
